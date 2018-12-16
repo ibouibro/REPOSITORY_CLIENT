@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Projet_Cinema_Client.UC.UCRental.UCRental_Edit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projet_Cinema_Client.UC.UCRental"
+             mc:Ignorable="d" 
+               d:DesignHeight="470" d:DesignWidth="566">
+    <Grid Background="BlueViolet" Height="470" VerticalAlignment="Top" Width="566" HorizontalAlignment="Right" Margin="-2,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Modification De Rental" HorizontalAlignment="Left" Margin="130,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.632,-1" FontSize="24" FontWeight="Bold" Height="50" VerticalContentAlignment="Center" Width="276" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Button x:Name="enregBT" Content="Enregistrer" HorizontalAlignment="Left" Margin="228,286,0,0" VerticalAlignment="Top" Width="128" VerticalContentAlignment="Center" Height="28" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" />
+        <Label Content="Return Date" HorizontalAlignment="Left" Margin="59,234,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="35" Width="143" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Grid.Row="1" FontSize="16"/>
+        <TextBox x:Name="returnDateTB" Background="{x:Null}" HorizontalAlignment="Left" Height="35" Margin="253,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" VerticalContentAlignment="Stretch" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" SelectionBrush="#FF569ED6" Grid.Row="1" FontSize="16" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Label Content="Inventory" HorizontalAlignment="Left" Margin="59,1,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="43" Width="143" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" FontSize="16" Grid.Row="1"/>
+        <ComboBox x:Name="listInventoryCB" HorizontalAlignment="Left" Margin="253,1,0,0" VerticalAlignment="Top" Width="264" Height="43" VerticalContentAlignment="Stretch" FontSize="16" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Grid.Row="1"/>
+        <Label Content="Staff" HorizontalAlignment="Left" Margin="59,158,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="41" Width="143" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Grid.Row="1" FontSize="16"/>
+        <ComboBox x:Name="listStaffCB" HorizontalAlignment="Left" Margin="253,158,0,0" VerticalAlignment="Top" Width="264" Height="41" VerticalContentAlignment="Stretch" Grid.Row="1" FontSize="16" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Label Content="Customer" HorizontalAlignment="Left" Margin="59,85,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="42" Width="143" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Grid.Row="1" FontSize="16"/>
+        <ComboBox x:Name="listCustomerCB" HorizontalAlignment="Left" Margin="253,85,0,0" VerticalAlignment="Top" Width="264" Height="42" VerticalContentAlignment="Stretch" Grid.Row="1" FontSize="16" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Label Content="Rental à modifier" HorizontalAlignment="Left" Margin="59,78,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="38" Width="143" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" FontSize="16"/>
+        <ComboBox x:Name="listRentalCB" HorizontalAlignment="Left" Margin="253,78,0,0" VerticalAlignment="Top" Width="264" Height="38" VerticalContentAlignment="Stretch" FontSize="16" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+
+
+
+    </Grid>
+</UserControl>

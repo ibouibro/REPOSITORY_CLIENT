@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Projet_Cinema_Client.UC.UCStore.UCStore_List"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projet_Cinema_Client.UC.UCStore"
+             mc:Ignorable="d" 
+             d:DesignHeight="470" d:DesignWidth="566">
+    <Grid Background="BlueViolet" Height="470" VerticalAlignment="Top" Width="566" HorizontalAlignment="Right" Margin="-2,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Liste Des Stores" HorizontalAlignment="Left" Margin="133,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.632,-1" FontSize="36" Height="53" VerticalContentAlignment="Center" Width="267" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+        <DataGrid x:Name="dg" HorizontalAlignment="Left" Height="402" Margin="10,53,0,0" VerticalAlignment="Top"  ColumnWidth="*" AutoGenerateColumns="False" Width="546" Grid.RowSpan="2" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Store Id" Binding="{Binding CityId}"/>
+                <DataGridTextColumn Header="Manager Staff Id" Binding="{Binding CityName}"/>
+                <DataGridTextColumn Header="Address Id" Binding="{Binding CountryID}"/>
+                
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

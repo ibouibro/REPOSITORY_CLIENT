@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Projet_Cinema_Client.UCAddress_Add"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projet_Cinema_Client"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Height="470" Width="566">
+    <Grid Background="BlueViolet" Height="470" VerticalAlignment="Top" Width="566" HorizontalAlignment="Right" Margin="-2,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Enregistrement D'Adresse&#xD;&#xA;" HorizontalAlignment="Left" Margin="44,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.632,-1" FontSize="36" FontWeight="Bold" Height="68" VerticalContentAlignment="Center" Width="503" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Label Content="Adresse&#xD;&#xA;" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="78" Width="113" FontSize="24" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+        <Label Content="Téléphone" HorizontalAlignment="Left" Margin="42,105,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="48" Width="145" FontSize="24" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+        <TextBox x:Name="adrTB" Background="{x:Null}" HorizontalAlignment="Left" Height="42" Margin="238,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" VerticalContentAlignment="Center" Grid.Row="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" SelectionBrush="#FF569ED6"/>
+        <TextBox x:Name="phoneTB" Background="{x:Null}" HorizontalAlignment="Left" Height="42" Margin="238,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" VerticalContentAlignment="Center" Grid.Row="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Button x:Name="enregBT" Content="Enregistrer" HorizontalAlignment="Left" Margin="238,215,0,0" VerticalAlignment="Top" Width="156" VerticalContentAlignment="Center" Height="44" FontSize="24" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" />
+
+
+
+    </Grid>
+</UserControl>

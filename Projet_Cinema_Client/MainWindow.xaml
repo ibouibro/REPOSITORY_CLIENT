@@ -1,0 +1,108 @@
+﻿<Window x:Class="Projet_Cinema_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Cinema_Client"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+          Title="MainWindow" Height="648" Width="1024" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid x:Name="GridGauche" Background="BlueViolet">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" Background="#FF4C1583">
+                <Image Height="150" VerticalAlignment="Top" Source="C:/Users/rimka/Desktop/STIC3/DotNet/projet_cinema/icons/700.jpg" Stretch="UniformToFill"/>
+                <Ellipse Height="100" Width="100" VerticalAlignment="top" HorizontalAlignment="Right" Margin="0,100,20,0" Stroke="#FFEAE0E0">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:/Users/rimka/Desktop/STIC3/DotNet/projet_cinema/icons/karou.jpg"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="karou" Foreground="White" FontFamily="Nirmala UI Semilight" FontSize="24" Margin="10 100" VerticalAlignment="Top"/>
+
+                <StackPanel Orientation="Horizontal" Margin="155,-250,0,347"   >
+                    <Button Width="50" Height="50" Padding="0" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,22,0,21" >
+                        <materialDesign:PackIcon Kind="Settings" Height="25" Width="25" />
+                    </Button>
+                    <Button Width="50" Height="50" Foreground="White"  Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" >
+                        <materialDesign:PackIcon Kind="Power" Height="25" Width="25"/>
+                    </Button>
+                </StackPanel>
+
+                <ListView Margin="0,212,10,10" Background="{x:Null}" Foreground="White" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Right" Width="230" BorderBrush="{x:Null}">
+
+                    <ListViewItem Height="40" x:Name="btHome">
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon  Kind="Home" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Home" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="45" x:Name="btCountry" Selected="btCountry_Selected"  >
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon  Kind="Planet" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Country" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="45" x:Name="btCity" Selected="btCity_Selected" >
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon  Kind="City" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="City" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="40" x:Name="btStore" Selected="btStore_Selected">
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="Store" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Stores" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="40" x:Name="btStaff" Selected="btStaff_Selected">
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="Person" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Staff" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem x:Name="btAddr" Height="40" Selected="btAddr_Selected">
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="AddressMarker" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Adresses" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="40" x:Name="btFilm" Selected="btFilm_Selected" >
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="Film" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Films" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="40" x:Name="btCustomer" Selected="btCustomer_Selected">
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="PersonOutline" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Customer" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="40" x:Name="btRental" Selected="btRental_Selected">
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="BookOpen" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Rentals" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="40" x:Name="btInventory" Selected="btInventory_Selected" >
+                        <StackPanel Orientation="Horizontal" Margin="10 0" >
+                            <materialDesign:PackIcon Kind="BookMultiple" Width="35" Height="35" VerticalAlignment="center"/>
+                            <TextBlock Text="Inventory" Margin="10" VerticalAlignment="Center" FontSize="20"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                </ListView>
+            </Grid>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="386,286,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="SectionTB" Foreground="White" Background="BlueViolet" HorizontalAlignment="Left" Height="44" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" TextChanged="TextBox_TextChanged" FontSize="36" Text="╚ Home" IsReadOnly="True"/>
+        </Grid>
+        <Grid x:Name="gridCentre" HorizontalAlignment="Left" Height="530" Margin="10,52,0,0" VerticalAlignment="Top" Width="748"/>
+
+
+
+    </Grid>
+</Window>

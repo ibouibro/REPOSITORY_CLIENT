@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Projet_Cinema_Client.UC.UCCountry.UCCountry_Add"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projet_Cinema_Client.UC.UCCountry"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="566">
+    <Grid Background="BlueViolet" Height="450" VerticalAlignment="Top" Width="566" HorizontalAlignment="Right" Margin="-2,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Enregistrement De Country" HorizontalAlignment="Left" Margin="44,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.632,-1" FontSize="36" FontWeight="Bold" Height="68" VerticalContentAlignment="Center" Width="478" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Label Content="Country" HorizontalAlignment="Left" Margin="44,25,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="42" Width="113" FontSize="24" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+        <TextBox x:Name="cityTB" Background="{x:Null}" HorizontalAlignment="Left" Height="42" Margin="238,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" VerticalContentAlignment="Center" Grid.Row="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" SelectionBrush="#FF569ED6"/>
+        <Button x:Name="enregBT" Content="Enregistrer" HorizontalAlignment="Left" Margin="197,157,0,0" VerticalAlignment="Top" Width="156" VerticalContentAlignment="Center" Height="44" FontSize="24" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" />
+
+
+
+    </Grid>
+</UserControl>
