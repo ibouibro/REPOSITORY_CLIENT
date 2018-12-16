@@ -12,7 +12,7 @@
             <RowDefinition Height="169*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Enregistrement De Staff" HorizontalAlignment="Left" Margin="136,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.632,-1" FontSize="24" FontWeight="Bold" Height="50" VerticalContentAlignment="Center" Width="293" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+        <Label Content="Enregistrement De Staff" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.632,-1" FontSize="24" FontWeight="Bold" Height="50" VerticalContentAlignment="Center" Width="293" Foreground="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="63,94,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="24" Width="143" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
         <Label Content="E-Mail" HorizontalAlignment="Left" Margin="63,117,0,0" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Height="27" Width="143" Grid.Row="1" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
         <TextBox x:Name="firstNameTB" Background="{x:Null}" HorizontalAlignment="Left" Height="24" Margin="257,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" VerticalContentAlignment="Stretch" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" SelectionBrush="#FF569ED6"/>
